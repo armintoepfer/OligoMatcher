@@ -1,0 +1,34 @@
+OligoMatcher finds all genes, which are target of an oligo.
+Input files are multiple fasta files.
+
+#PREREQUISITES TO RUN:
+ - JAVA 7 (http://jdk7.java.net/)
+
+#USAGE:
+java -jar OligoMatcher.jar [options...]
+
+ ------------------------
+ === GENERAL options ===
+  -i PATH		: Path to the oligo file (FASTA or FASTQ format) [REQUIRED]
+  -g PATH		: Path to the genes file (FASTA format) [REQUIRED]
+  -K int		: Size of the kmer [REQUIRED]
+  -verbose		: Print debug information
+ ------------------------
+
+Example: java -jar OligoMatcher.jar -i seed.fasta -g genes.fa -K 8
+
+#CONTACT:
+ Armin Töpfer
+ armin.toepfer (at) gmail.com
+ http://www.bsse.ethz.ch/cbg/people/toepfera
+
+#PREREQUISITES COMPILE (only for dev):
+ - Maven 3 (http://maven.apache.org/)
+
+#INSTALL (only for dev):
+ cd QuasiRecomb
+ mvn OligoMatcher package
+ java -jar OligoMatcher/target/OligoMatcher.jar --help
+
+#LICENSE:
+ GNU GPLv3 http://www.gnu.org/licenses/gpl-3.0
