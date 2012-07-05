@@ -1,5 +1,12 @@
 OligoMatcher finds all genes, which are target of an oligo.
+
+#INPUT/OUTPUT:
 Input files are multiple fasta files.
+Output is STDOUT.
+
+#OUTPUT FORMAT:
+oligoIdentifier1;gene1;gene4;gene9;
+oligoIdentifier2;gene4;gene7;
 
 #PREREQUISITES TO RUN:
  - JAVA 7 (http://jdk7.java.net/)
