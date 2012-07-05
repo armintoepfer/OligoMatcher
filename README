@@ -33,7 +33,7 @@ Example: java -jar OligoMatcher.jar -i seed.fasta -g genes.fa -K 8
  - Maven 3 (http://maven.apache.org/)
 
 #INSTALL (only for dev):
- cd QuasiRecomb
+ cd OligoMatcher
  mvn OligoMatcher package
  java -jar OligoMatcher/target/OligoMatcher.jar --help
 
